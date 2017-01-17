@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class NewMethod {
 	
 	public static void main(String[] args) {
+		System.out.println("Ans#4." + getAsKilometer(10));
 		System.out.println("Ans#3." + getAllOddNumber(12));
 		System.out.println("Ans#2." + getAllEvenNumber(10));
 		System.out.println("Ans#1." + getName("this is String"));
@@ -53,5 +54,18 @@ public class NewMethod {
 			  }
 		   } 
 		  return numberList;
-	   }
-     }
+		  
+	  }
+	   /**Q.4
+	    * write a method that take input as mile & return as kilometer
+	    * 
+	    * parameter:double mile.
+	    * returnType:double.
+	    * servingBucket:variable
+	    */
+	  public static double getAsKilometer(double mile){
+		  double kilometer =0;
+		  kilometer = mile * 1.6;
+		  return kilometer;
+	  }
+    }
