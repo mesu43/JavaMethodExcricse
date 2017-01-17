@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class NewMethod {
 	
 	public static void main(String[] args) {
+		System.out.println("Ans#3." + getAllOddNumber(12));
 		System.out.println("Ans#2." + getAllEvenNumber(10));
 		System.out.println("Ans#1." + getName("this is String"));
 		
@@ -36,4 +37,21 @@ public class NewMethod {
 		}
 		return numberList;
 	}
-}
+	 /**Q.3
+	  * write a method that take a number input and return the list of
+	  * all odd number from 0 to that given number.
+	  * 
+	  * parameter/input:int number
+	  * returnType/output:ArrayList<Integer>
+	  * servingBucket/container:List
+	  */
+	 public static ArrayList<Integer> getAllOddNumber(int number){
+		 ArrayList<Integer> numberList = new ArrayList<Integer>();
+		 for (int i = 0; i<= number; i++){
+			 if (i % 2 ==1){
+				 numberList.add(i);
+			  }
+		   } 
+		  return numberList;
+	   }
+     }
