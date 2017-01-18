@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class NewMethod {
 	
 	public static void main(String[] args) {
+		System.out.println("Ans#5." + getInUpperCase("this Is a String"));
 		System.out.println("Ans#4." + getAsKilometer(10));
 		System.out.println("Ans#3." + getAllOddNumber(12));
 		System.out.println("Ans#2." + getAllEvenNumber(10));
@@ -68,4 +69,16 @@ public class NewMethod {
 		  kilometer = mile * 1.6;
 		  return kilometer;
 	  }
+	   /**
+	    * write a method that take one String input and return same String in upper case.
+	    * 
+	    * parameter:String text.
+	    * returnType:String.
+	    * servingBucket:variable.
+	    */
+	   public static String getInUpperCase(String text) {
+		   String upperCase = "";
+		   upperCase = text.toUpperCase();
+		   return upperCase;
+	   }
     }
