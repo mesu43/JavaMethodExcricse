@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class NewMethod {
 	
 	public static void main(String[] args) {
+		System.out.println("Ans#6." + getInLowerCase("This Is A Bangladesh"));
 		System.out.println("Ans#5." + getInUpperCase("this Is a String"));
 		System.out.println("Ans#4." + getAsKilometer(10));
 		System.out.println("Ans#3." + getAllOddNumber(12));
@@ -81,4 +82,18 @@ public class NewMethod {
 		   upperCase = text.toUpperCase();
 		   return upperCase;
 	   }
+	    /**Q.6
+	     * write a method that take one string input and return same String in lower case.
+	     * 
+	     * parameter:String text
+	     * returnType:String
+	     * servingBucket:variable
+	     */
+	    public static String getInLowerCase(String text) {
+	    	String lowercase = "";
+	    	lowercase = text.toLowerCase();
+	    	return lowercase;
+	    }
+	  
+	   
     }
